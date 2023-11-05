@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
-$itemGrow: 1.2;
-$duration: 250ms;
+
 
 
 *{
@@ -30,7 +29,7 @@ $duration: 250ms;
 {
   float: left;
   display: block;
-  color: black;
+  color: paleturquoise;
   text-align: center;
   padding: 26px 16px;
   text-decoration: none;
@@ -46,7 +45,7 @@ $duration: 250ms;
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #00CDCD;
+  background-color: powderblue;
   
 }
 
@@ -80,7 +79,7 @@ $duration: 250ms;
 	text-align: left;
 	font-size: 20px;
 	
-	background-color: #00CDCD;
+	background-color: powderblue;
 	
   	
 	
@@ -89,12 +88,12 @@ $duration: 250ms;
 
 #nav-bar ul li a:hover
 {
-	color:#007bff!important;
+	color: cornflowerblue!important;
 }
 
 .navbar
 {
-	background-color: #00CDCD;
+	background-color: powderblue;
 	margin-bottom: 20px;
 	
 }
@@ -107,7 +106,7 @@ $duration: 250ms;
 
 .navbar-link
 {
-	color:#555!important;
+	color: cadetblue!important;
 	font-weight:600;
 	font-size:16px;
 }
@@ -146,7 +145,7 @@ $duration: 250ms;
 /*---on sale---*/
 .title-box
 {
-	background: #00CDCD;
+	background: powderblue;
 	color: #fff;
 	width: 180px;
 	padding: 4px 10px;
@@ -165,7 +164,7 @@ $duration: 250ms;
 .title-box::after
 {
 	content: '';
-	border-top: 40px #00cdcd;
+	border-top: 40px powderblue;
 	border-right: 50px solid transparent;
 	position: absolute;
 	display: flex;
@@ -209,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 {
 	cursor: pointer;
 	background-color: #fff;
-	color: #000;
+	color: gray;
 	height: 35px;
 	width: 35px;
 	font-size: 20px;
@@ -249,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 3.5em;
 	overflow: hidden;
 	padding-left: 85px;
-	min-height: 82px;
+min-height: 82px;
 	line-height: 2.3;
 	
 	
@@ -258,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tagline {
 	float: right;
-	color: #00CDCD;
+	color: powderblue;
 	font-size: 14px;
 	padding-top: 3.5em;
 }
@@ -329,7 +328,7 @@ form.add-to-cart p
 {
 	text-align: center;
 	
-	color: #00CDCD;
+	color: powderblue;
 }
 
 form.add-to-cart p .btn
@@ -337,7 +336,7 @@ form.add-to-cart p .btn
 	text-align: center;
 	
 	color: white;
-	background: red;
+	background: darkcyan;
 	margin-bottom: 40px;
 }
 
@@ -384,7 +383,7 @@ form input.qty {
 {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	color:#555;
+	color: cadetblue;
 }
 
 
@@ -423,7 +422,7 @@ form input.qty {
 	background: black;
 	background-size: cover;
 	background-position: center;
-	color:#555!important;
+	color: cadetblue!important;
 	background-attachment: fixed;
 	padding-top:50px;
 	padding-bottom: 50px;
@@ -480,7 +479,7 @@ form input.qty {
 }
 
 .services .col-md-4:hover{
-	background:#007bff;
+	background: cornflowerblue;
 	cursor: pointer;
 	transition: 0.7s;
 	
@@ -499,17 +498,17 @@ form input.qty {
 h1
 {
 	text-align: center;
-	color: #555!important;
+	color: cadetblue!important;
 	padding-bottom: 10px;
 }
 
 h1::after
 {
 	content:'';
-	background: #007bff;
+	background: cornflowerblue;
 	display: block;
 	height: 3px;
-	width: 170px;
+width: 170px;
 	margin: 20px auto 5px;
 }
 
@@ -538,7 +537,7 @@ h1::after
 	font-size: 22px;
 	font-weight: bold;
 	margin-top:15px;
-	color: #007bff!important;
+	color: cornflowerblue!important;
 	
 }
 
@@ -555,7 +554,7 @@ h1::after
 {
 	height:25px;
 	width: 25px;
-	color: #007bff !important;
+	color:  cornflowerblue !important;
 	background: #fff;
 	padding: 4px;
 	border-radius: 50%;
@@ -630,7 +629,7 @@ h1::after
 .contact-info .fa
 {
 	margin: 10px;
-	color: #007bff;
+	color: cornflowerblue;
 	font-weight: bold;
 }
 
@@ -649,7 +648,7 @@ h1::after
 	width: 100%;
 	line-height: 3;
 	text-align: center;
-	background: #00CDCD;
+	background: powderblue;
 	position: absolute;
 	color: #fff;
 	left: 0;
@@ -688,7 +687,7 @@ body#checkout-page #site-info {
 
 .shopping-cart tr:nth-child(even) {
 	background: #fafafa;
-},
+}
 
 .shopping-cart td.pdelete {
 	text-align: center;
@@ -764,7 +763,7 @@ body#checkout-page #site-info {
 }
 
 #checkout-order-form label {
-	display: block;
+display: block;
 	font-weight: bold;
 	margin-bottom: 0.3em;
 	text-align: left;
@@ -838,7 +837,3 @@ body#checkout-page #site-info {
 #paypal-form {
 	margin: 1.5em 0;
 }
-
-    
-
-
