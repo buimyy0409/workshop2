@@ -29,9 +29,9 @@
 			this.$paypalForm = this.$element.find( "#paypal-form" ); // PayPal form
 			
 			
-			this.currency = "&euro;"; // HTML entity of the currency to be displayed in the layout
-			this.currencyString = "€"; // Currency symbol as textual string
-			this.paypalCurrency = "EUR"; // PayPal's currency code
+			this.currency = "&dollar;"; // HTML entity of the currency to be displayed in the layout
+			this.currencyString = "$"; // Currency symbol as textual string
+			this.paypalCurrency = "DOLLAR"; // PayPal's currency code
 			this.paypalBusinessEmail = "yourbusiness@email.com"; // Your Business PayPal's account email address
 			this.paypalURL = "https://www.sandbox.paypal.com/cgi-bin/webscr"; // The URL of the PayPal's form
 			
@@ -129,7 +129,6 @@
 					var city = this.storage.getItem( "billing-city" );
 					var address = this.storage.getItem( "billing-address" );
 					var zip = this.storage.getItem( "billing-zip" );
-					var country = this.storage.getItem( "billing-country" );
 					
 					var html = "<div class='detail'>";
 						html += "<h2>Billing and Shipping</h2>";
@@ -139,7 +138,6 @@
 						html += "<li>" + city + "</li>";
 						html += "<li>" + address + "</li>";
 						html += "<li>" + zip + "</li>";
-						html += "<li>" + country + "</li>";
 						html += "</ul></div>";
 						
 					this.$userDetails[0].innerHTML = html;
@@ -149,14 +147,12 @@
 					var city = this.storage.getItem( "billing-city" );
 					var address = this.storage.getItem( "billing-address" );
 					var zip = this.storage.getItem( "billing-zip" );
-					var country = this.storage.getItem( "billing-country" );
 					
 					var sName = this.storage.getItem( "shipping-name" );
 					var sEmail = this.storage.getItem( "shipping-email" );
 					var sCity = this.storage.getItem( "shipping-city" );
 					var sAddress = this.storage.getItem( "shipping-address" );
 					var sZip = this.storage.getItem( "shipping-zip" );
-					var sCountry = this.storage.getItem( "shipping-country" );
 					
 					var html = "<div class='detail'>";
 						html += "<h2>Billing</h2>";
@@ -166,7 +162,6 @@
 						html += "<li>" + city + "</li>";
 						html += "<li>" + address + "</li>";
 						html += "<li>" + zip + "</li>";
-						html += "<li>" + country + "</li>";
 						html += "</ul></div>";
 						
 						html += "<div class='detail right'>";
@@ -177,7 +172,6 @@
 						html += "<li>" + sCity + "</li>";
 						html += "<li>" + sAddress + "</li>";
 						html += "<li>" + sZip + "</li>";
-						html += "<li>" + sCountry + "</li>";
 						html += "</ul></div>";
 						
 					this.$userDetails[0].innerHTML = html;	
@@ -612,28 +606,28 @@
 					var city = $( "#city", $set ).val();
 					var address = $( "#address", $set ).val();
 					var zip = $( "#zip", $set ).val();
-					var country = $( "#country", $set ).val();
+					var country = $( "#gender", $set ).val();
 					
 					self.storage.setItem( "billing-name", name );
 					self.storage.setItem( "billing-email", email );
 					self.storage.setItem( "billing-city", city );
 					self.storage.setItem( "billing-address", address );
 					self.storage.setItem( "billing-zip", zip );
-					self.storage.setItem( "billing-country", country );
+					self.storage.setItem( "billing-gender", gender );
 				} else {
 					var sName = $( "#sname", $set ).val();
 					var sEmail = $( "#semail", $set ).val();
 					var sCity = $( "#scity", $set ).val();
 					var sAddress = $( "#saddress", $set ).val();
 					var sZip = $( "#szip", $set ).val();
-					var sCountry = $( "#scountry", $set ).val();
+					var sCountry = $( "#sgender", $set ).val();
 					
 					self.storage.setItem( "shipping-name", sName );
 					self.storage.setItem( "shipping-email", sEmail );
 					self.storage.setItem( "shipping-city", sCity );
 					self.storage.setItem( "shipping-address", sAddress );
 					self.storage.setItem( "shipping-zip", sZip );
-					self.storage.setItem( "shipping-country", sCountry );
+					self.storage.setItem( "shipping-country", sGender );
 				
 				}
 			});
